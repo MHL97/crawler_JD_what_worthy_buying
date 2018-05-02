@@ -3,6 +3,8 @@
   <database-model serializer="dbm" rdbms="MYSQL" format-version="4.8">
     <root id="1">
       <ServerVersion>5.7.22</ServerVersion>
+      <DefaultEngine>InnoDB</DefaultEngine>
+      <DefaultTmpEngine>InnoDB</DefaultTmpEngine>
       <DefaultCasing>lower/lower</DefaultCasing>
     </root>
     <schema id="2" parent="1" name="information_schema">
@@ -1094,12 +1096,8 @@
     <view id="289" parent="2" name="VIEWS">
       <System>1</System>
     </view>
-    <table id="290" parent="3" name="jd_items">
-      <Engine>InnoDB</Engine>
-    </table>
-    <table id="291" parent="3" name="jd_product">
-      <Engine>InnoDB</Engine>
-    </table>
+    <table id="290" parent="3" name="jd_items"/>
+    <table id="291" parent="3" name="jd_product"/>
     <column id="292" parent="229" name="CHARACTER_SET_NAME">
       <Position>1</Position>
       <DataType>varchar(32)|0s</DataType>
